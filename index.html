@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="gumelar-wicaksono-profile-portofolio" />
+    <meta name="keywords" content="profile gumelar-wicaksono portofolio , html5 ,css3,javascript , bootstrap,reactjs,nodejs,mongodb, fullstack developer" />
+    <meta name="author" content="gumelar-wicaksono" />
+    <link rel="shortcut icon" href="./assets/img/g.ico" type="image/x-icon" />
+
+    <!-- =========== Bootstrap CDN.css ============== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- ======== Local Css ========= -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <title>Gumelar wicaksono || profile || portofolio</title>
+  </head>
+  <body>
+    <button class="rounded-pill" id="mode-toggle" onclick="toggleDarkMode(true)">
+      <i id="mode-icon" class="bx bxs-moon"></i>
+    </button>
+    <header class="">
+      <div class="card text-center">
+        <div class="card-header d-flex justify-content-center">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="true" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#services">service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-body mt-5 mb-5">
+          <h1 class="card-title d-flex flex-column justify-content-center align-content-center align-items-center">
+            <div class="size rounded-5"><img src="./assets/img/dazai-removebg-preview.png" class="card-img-top" alt="gumelar-wicaksono-profile-portofolio" /></div>
+            <span>Hi, i'am gumelar wicaksono</span>
+          </h1>
+          <h1 class="card-title display-5 fw-bold">i'am a <span class="myjob" id="myJob" data-type="Frontend ,Backand , Full Stack Developer"></span></h1>
+          <p class="card-text"></p>
+          <div class="btn btn-light">
+            <span class="d-flex">
+              <a href="https://www.instagram.com/gumelar_wicaksono/" class="text-danger me-2"><i class="bx bxl-instagram fs-3"></i></a>
+              <a href="https://web.facebook.com/gumelar.wicaksono.12" class="text-primary me-2"><i class="bx bxl-facebook fs-3"></i></a>
+              <a href="https://twitter.com/gumelar_ica" class="text-primary me-2"><i class="bx bxl-twitter fs-3"></i></a>
+              <a href="https://github.com/Gumelarwicaksono/" class="text-black me-2"><i class="bx bxl-github fs-3"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=%2B6282122394638&text&type=phone_number&app_absent=0" class="text-success me-2"><i class="bx bxl-whatsapp fs-3"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ============== main ================= -->
+    <main>
+      <div class="container-fluid mt-5">
+        <div class="container">
+          <h3 class="text-primary" id="services">services</h3>
+          <div class="row mt-4" id="cards"></div>
+        </div>
+      </div>
+      <!-- ================ contak me ======================= -->
+      <div class="container align-items-center mt-2">
+        <h3 class="text-primary" id="contact">Contact</h3>
+        <form style="max-width: 30rem">
+          <div class="mb-3">
+            <label for="company" class="form-label">companiName</label>
+            <input type="text" class="form-control" id="company" placeholder="company name or name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="masukan email..." required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Messages</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="tuliskan pesan anda....." required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="note" class="form-label">Note</label>
+            <input type="text" class="form-control" id="note" placeholder="note : ...." />
+          </div>
+          <button class="btn btn-primary" onclick="sendWhatsAppMessage()">send to whatsapp...</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- ================ footer ======================= -->
+    <footer class="p-5">
+      <span class="text-center" id="tahun"></span>
+      <p id="demo"></p>
+    </footer>
+    <!-- ================ javascript CDN.js ===================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- ================ Local javascript  ===================== -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

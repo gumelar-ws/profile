@@ -1,0 +1,39 @@
+.size {
+  width: 10%;
+  height: 10%;
+  background: #a8eb12;
+}
+
+.border-primary {
+  border-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12), 3;
+}
+
+.myjob {
+  background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.card-text {
+  height: 100px;
+  overflow: hidden;
+}
+
+.text-primary {
+  cursor: pointer;
+}
+#mode-toggle {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  z-index: 1;
+}
+#darkmode {
+  background: black;
+  color: aliceblue;
+}
+
+#darkmode .card {
+  background: black;
+  color: aliceblue;
+}
