@@ -16,18 +16,15 @@
     <!-- ======== Local Css ========= -->
     <link rel="stylesheet" href="./assets/style.css" />
 
-    <title>Gumelar wicaksono || profile || portofolio</title>
+    <title>Gumelar wicaksono | profile | portofolio</title>
   </head>
   <body>
-    <button class="rounded-pill" id="mode-toggle" onclick="toggleDarkMode(true)">
-      <i id="mode-icon" class="bx bxs-moon"></i>
-    </button>
     <header class="">
       <div class="card text-center">
         <div class="card-header d-flex justify-content-center">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-              <a class="nav-link" aria-current="true" href="#">home</a>
+              <a class="nav-link" aria-current="true" id="home">home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#services">service</a>
@@ -41,7 +38,8 @@
         <div class="card-body mt-5 mb-5">
           <h1 class="card-title d-flex flex-column justify-content-center align-content-center align-items-center">
             <div class="size rounded-5"><img src="./assets/img/dazai-removebg-preview.png" class="card-img-top" alt="gumelar-wicaksono-profile-portofolio" /></div>
-            <span>Hi, i'am gumelar wicaksono</span>
+            <span>Hallo...</span>
+            <span>I'am gumelar wicaksono</span>
           </h1>
           <h1 class="card-title display-5 fw-bold">i'am a <span class="myjob" id="myJob" data-type="Frontend ,Backand , Full Stack Developer"></span></h1>
           <p class="card-text"></p>
@@ -60,7 +58,7 @@
     <!-- ============== main ================= -->
     <main>
       <div class="container-fluid mt-5">
-        <div class="container text-align-center">
+        <div class="container cards-container">
           <h3 class="text-primary" id="services">services</h3>
           <div class="row mt-4" id="cards"></div>
         </div>
@@ -95,6 +93,13 @@
       <span class="text-center" id="tahun"></span>
       <p id="demo"></p>
     </footer>
+    <!-- =================== -->
+    <button class="rounded-pill" id="mode-toggle" onclick="toggleDarkMode(true)">
+      <i id="mode-icon" class="bx bxs-moon"></i>
+    </button>
+    <a class="back-home" href="#home">
+      <i class="bx bx-up-arrow-alt fs-1"></i>
+    </a>
     <!-- ================ javascript CDN.js ===================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- ================ Local javascript  ===================== -->

@@ -37,13 +37,26 @@
   background: black;
   color: aliceblue;
 }
+.back-home {
+  position: fixed;
+  border-radius: 5px;
+  bottom: 10%;
+  right: 5%;
+  z-index: 1;
+}
+.back-home:hover {
+  background: #ccc3c3ee;
+}
 
-@media (max-width: 467px) {
-
+@media (max-width: 414px) {
   #cards {
-
-    text-align: center;
-
+    padding-left: 30px;
+    padding-right: 30px;
   }
-
+  .cards-container h3 {
+    text-align: center;
+  }
+  #contact {
+    text-align: center;
+  }
 }

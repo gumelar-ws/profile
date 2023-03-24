@@ -106,8 +106,8 @@ const data = [
 // ===================================
 let cardsHTML = '';
 data.forEach((card, index) => {
-  const cardHTML = `<div class="col-md-4 col-sm-3 text-align-center">
-                      <div class="  card  border-primary mb-3" style="max-width: 18rem">
+  const cardHTML = `<div class=" col-sm-12  col-md-4  ">
+                      <div class="  card  border-primary mb-3 " style="max-width: 18rem">
                         <div class="card-header"><i class="bx bxl-${card.icon} ${card.color} ms-2"></i>${card.title}</div>
                         <div class="card-body">
                           <h5 class="card-title">${card.subTitle}</h5>
