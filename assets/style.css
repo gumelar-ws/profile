@@ -37,3 +37,13 @@
   background: black;
   color: aliceblue;
 }
+
+@media (max-width: 467px) {
+
+  #cards {
+
+    text-align: center;
+
+  }
+
+}
