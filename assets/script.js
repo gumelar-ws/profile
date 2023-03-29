@@ -62,56 +62,6 @@ navLinks.forEach((link) => {
   });
 });
 
-// ============= navbar fixed ===========================================
-
-// window.onscroll = function () {
-//   const nav = document.getElementById('nav');
-//   const fixNav = nav.offsetTop;
-//   if (window.pageYOffset > fixNav) {
-//     nav.classList.add('navbar-fixed');
-//   } else {
-//     nav.classList.remove('navbar-fixed');
-//   }
-// };
-// // ====================== scroll target ==================================
-
-// const navLinks = document.querySelectorAll('.nav-item a');
-
-// navLinks.forEach((link) => {
-//   link.addEventListener('click', (event) => {
-//     event.preventDefault();
-
-//     const targetId = link.getAttribute('href');
-
-//     if (targetId === '#home') {
-//       // Jika link home diklik, kembalikan ke elemen home
-//       window.scrollTo({
-//         top: 0,
-//         behavior: 'smooth',
-//       });
-//       return;
-//     }
-//     // Hapus class active dari semua elemen <a>
-//     navLinks.forEach((link) => link.classList.remove('active'));
-
-//     // Tambahkan class active pada elemen <a> yang baru saja diklik
-//     link.classList.add('active');
-
-//     const target = document.querySelector(link.getAttribute('href'));
-//     const selectTarget = document.querySelectorAll(link.getAttribute('href'));
-//     selectTarget.forEach(function (target) {
-//       target.classList.remove('p-5');
-//     });
-//     target.classList.add('p-5');
-//     const navbarHeight = document.querySelector('.card-header').offsetHeight;
-//     const targetTop = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
-//     window.scrollTo({
-//       top: targetTop,
-//       behavior: 'smooth',
-//     });
-//   });
-// });
-
 // ========================================================
 const myDiv = document.getElementById('myJob');
 const types = myDiv.dataset.type.split(','); //mengambil nilai tipe data dan memisahkan dengan koma
@@ -251,7 +201,7 @@ data.forEach((card, index) => {
   });
 });
 
-// ================================================
+// ===================  contact me =============================
 
 function sendWhatsAppMessage() {
   // Mendapatkan input nomor telepon dan pesan dari form
@@ -266,11 +216,11 @@ function sendWhatsAppMessage() {
     Hai, ini pesan dari *${companyName}*! 🚀
 
     *email*   : ${email} 
-    ———————————————————————
+    ___________
     *message* : ${message}
-    ———————————————————————
+    ___________
     *note*    : ${note}
-    ———————————————————————
+    ___________
     Terima kasih telah menghubungi saya! 🙂
   `;
 

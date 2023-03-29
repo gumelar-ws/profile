@@ -6,23 +6,19 @@
   z-index: 999;
   background: #c3c7cc;
 }
-
 .size {
   width: 20%;
   height: 20%;
   background: #a8eb12;
 }
-
 .border-primary {
   border-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12), 3;
 }
-
 .myjob {
   background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-
 .card-text {
   height: 100px;
   overflow: hidden;
@@ -43,12 +39,10 @@
   left: 5%;
   z-index: 1;
 }
-
 #darkmode {
   background: black;
   color: aliceblue;
 }
-
 #darkmode .card {
   background: black;
   color: aliceblue;
@@ -63,7 +57,6 @@
 .back-home:hover {
   background: #ccc3c3ee;
 }
-
 @media (max-width: 414px) {
   #cards {
     padding-left: 30px;
