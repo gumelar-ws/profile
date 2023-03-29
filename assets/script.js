@@ -1,14 +1,117 @@
+// ====================== navbar fixed ==================================
+
+const fixNav = () => {
+  const nav = document.getElementById('nav');
+  const cardHeader = document.querySelector('.card-header');
+  const navbarHeight = cardHeader.offsetHeight;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > navbarHeight) {
+    nav.classList.add('navbar-fixed');
+  } else {
+    nav.classList.remove('navbar-fixed');
+  }
+};
+
+fixNav();
+
+window.addEventListener('scroll', fixNav);
+
+// ====================== scroll target ==================================
+
 const navLinks = document.querySelectorAll('.nav-item a');
 
 navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const targetId = link.getAttribute('href');
+
+    if (targetId === '#') {
+      // Jika link home diklik, kembalikan ke elemen home dan tambahkan class active pada elemen home
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+      navLinks.forEach((link) => {
+        if (link.getAttribute('href') === '#') {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+      return;
+    }
+
     // Hapus class active dari semua elemen <a>
     navLinks.forEach((link) => link.classList.remove('active'));
 
     // Tambahkan class active pada elemen <a> yang baru saja diklik
     link.classList.add('active');
+
+    const target = document.querySelector(link.getAttribute('href'));
+    const selectTarget = document.querySelectorAll(link.getAttribute('href'));
+    selectTarget.forEach((target) => target.classList.remove('p-5'));
+    target.classList.add('p-5');
+    const cardHeader = document.querySelector('.card-header');
+    const navbarHeight = cardHeader.offsetHeight;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+    window.scrollTo({
+      top: targetTop,
+      behavior: 'smooth',
+    });
   });
 });
+
+// ============= navbar fixed ===========================================
+
+// window.onscroll = function () {
+//   const nav = document.getElementById('nav');
+//   const fixNav = nav.offsetTop;
+//   if (window.pageYOffset > fixNav) {
+//     nav.classList.add('navbar-fixed');
+//   } else {
+//     nav.classList.remove('navbar-fixed');
+//   }
+// };
+// // ====================== scroll target ==================================
+
+// const navLinks = document.querySelectorAll('.nav-item a');
+
+// navLinks.forEach((link) => {
+//   link.addEventListener('click', (event) => {
+//     event.preventDefault();
+
+//     const targetId = link.getAttribute('href');
+
+//     if (targetId === '#home') {
+//       // Jika link home diklik, kembalikan ke elemen home
+//       window.scrollTo({
+//         top: 0,
+//         behavior: 'smooth',
+//       });
+//       return;
+//     }
+//     // Hapus class active dari semua elemen <a>
+//     navLinks.forEach((link) => link.classList.remove('active'));
+
+//     // Tambahkan class active pada elemen <a> yang baru saja diklik
+//     link.classList.add('active');
+
+//     const target = document.querySelector(link.getAttribute('href'));
+//     const selectTarget = document.querySelectorAll(link.getAttribute('href'));
+//     selectTarget.forEach(function (target) {
+//       target.classList.remove('p-5');
+//     });
+//     target.classList.add('p-5');
+//     const navbarHeight = document.querySelector('.card-header').offsetHeight;
+//     const targetTop = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+//     window.scrollTo({
+//       top: targetTop,
+//       behavior: 'smooth',
+//     });
+//   });
+// });
+
 // ========================================================
 const myDiv = document.getElementById('myJob');
 const types = myDiv.dataset.type.split(','); //mengambil nilai tipe data dan memisahkan dengan koma
@@ -212,6 +315,13 @@ function setDarkMode(isDark) {
 }
 
 function updateModeIcon() {
-  const icon = isDarkMode ? 'sun text-warning' : 'moon text-black';
+  const icon = isDarkMode ? 'sun text-black' : 'moon text-black';
   document.getElementById('mode-icon').className = `bx bxs-${icon}`;
+  const modeClass = document.getElementById('mode-icon').classList;
+
+  if (modeClass.contains('bxs-sun') && isDarkMode) {
+    document.getElementById('mode-icon').innerHTML = 'dark';
+  } else if (modeClass.contains('bxs-moon')) {
+    document.getElementById('mode-icon').innerHTML = 'light';
+  }
 }

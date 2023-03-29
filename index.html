@@ -20,14 +20,14 @@
   </head>
   <body>
     <header class="">
-      <div class="card text-center">
-        <div class="card-header d-flex justify-content-center">
+      <div class="card text-center border-0 shadow-none">
+        <div class="card-header d-flex justify-content-center" id="nav">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-              <a class="nav-link" aria-current="true" id="home">home</a>
+              <a class="nav-link active" aria-current="true" href="#" id="home">home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#services">service</a>
+              <a class="nav-link" href="#services">service</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">contact</a>
@@ -39,9 +39,9 @@
           <h1 class="card-title d-flex flex-column justify-content-center align-content-center align-items-center">
             <div class="size rounded-5"><img src="./assets/img/dazai-removebg-preview.png" class="card-img-top" alt="gumelar-wicaksono-profile-portofolio" /></div>
             <span>Hallo...</span>
-            <span>I'am gumelar wicaksono</span>
+            <span>i'm gumelar wicaksono</span>
           </h1>
-          <h1 class="card-title display-5 fw-bold">i'am a <span class="myjob" id="myJob" data-type="Frontend ,Backand , Full Stack Developer"></span></h1>
+          <h1 class="card-title display-5 fw-bold">i'm a <span class="myjob" id="myJob" data-type="Frontend ,Backand , Full Stack Developer"></span></h1>
           <p class="card-text"></p>
           <div class="btn btn-light">
             <span class="d-flex">
@@ -54,21 +54,25 @@
           </div>
         </div>
       </div>
+      <hr />
     </header>
     <!-- ============== main ================= -->
     <main>
-      <div class="container-fluid mt-5">
+      <div class="container-fluid mt-3">
         <div class="container cards-container">
-          <h3 class="text-primary" id="services">services</h3>
-          <div class="row mt-4" id="cards"></div>
+          <h3 class="text-primary target" id="services">services</h3>
+          <div class="row mt-2 mb-2" id="cards"></div>
         </div>
+        <hr />
       </div>
+      <!-- ================ project ======================= -->
+
       <!-- ================ contak me ======================= -->
-      <div class="container align-items-center mt-2">
-        <h3 class="text-primary" id="contact">Contact</h3>
+      <div class="container align-items-center mt-4">
+        <h3 class="text-primary target" id="contact">Contact</h3>
         <form style="max-width: 30rem">
           <div class="mb-3">
-            <label for="company" class="form-label">companiName</label>
+            <label for="company" class="form-label">companyName</label>
             <input type="text" class="form-control" id="company" placeholder="company name or name" required />
           </div>
           <div class="mb-3">
@@ -93,11 +97,10 @@
       <span class="text-center" id="tahun"></span>
       <p id="demo"></p>
     </footer>
-    <!-- =================== -->
-    <button class="rounded-pill" id="mode-toggle" onclick="toggleDarkMode(true)">
-      <i id="mode-icon" class="bx bxs-moon"></i>
-    </button>
-    <a class="back-home" href="#home">
+    <!-- ======== btn dark mode =========== -->
+    <p id="teme" class="text-primary fs-6">Teme</p>
+    <button class="rounded-pill" id="mode-toggle" onclick="toggleDarkMode(true)"><i id="mode-icon" class="bx bxs-moon"></i></button>
+    <a class="back-home" href="#">
       <i class="bx bx-up-arrow-alt fs-1"></i>
     </a>
     <!-- ================ javascript CDN.js ===================== -->

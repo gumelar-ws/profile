@@ -1,3 +1,12 @@
+.navbar-fixed {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #c3c7cc;
+}
+
 .size {
   width: 20%;
   height: 20%;
@@ -22,12 +31,19 @@
 .text-primary {
   cursor: pointer;
 }
+#teme {
+  position: fixed;
+  top: 16%;
+  left: 5%;
+  z-index: 1;
+}
 #mode-toggle {
   position: fixed;
   top: 20%;
   left: 5%;
   z-index: 1;
 }
+
 #darkmode {
   background: black;
   color: aliceblue;
