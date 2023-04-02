@@ -62,7 +62,7 @@ navLinks.forEach((link) => {
   });
 });
 
-// ========================================================
+// ======================== text typing ================================
 const myDiv = document.getElementById('myJob');
 const types = myDiv.dataset.type.split(','); //mengambil nilai tipe data dan memisahkan dengan koma
 let currentIndex = 0;

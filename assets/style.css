@@ -4,7 +4,7 @@
   position: fixed;
   width: 100%;
   z-index: 999;
-  background: #c3c7cc;
+  background: #3d3e41;
 }
 .size {
   width: 20%;
@@ -57,6 +57,7 @@
 .back-home:hover {
   background: #ccc3c3ee;
 }
+
 @media (max-width: 414px) {
   #cards {
     padding-left: 30px;
@@ -68,4 +69,23 @@
   #contact {
     text-align: center;
   }
+}
+
+/* poligon */
+.pol {
+  background: #0e54bd23;
+  width: 200px;
+  aspect-ratio: 1;
+  clip-path: polygon(
+    96.77% 67.67%,
+    32.33% 96.77%,
+    3.23% 32.33%,
+    67.67% 3.23%,
+    96.77% 67.67%,
+    calc(67.67% - 5.3px) calc(3.23% - -14.03px),
+    calc(3.23% - -14.03px) calc(32.33% - -5.3px),
+    calc(32.33% - -5.3px) calc(96.77% - 14.03px),
+    calc(96.77% - 14.03px) calc(67.67% - 5.3px),
+    calc(67.67% - 5.3px) calc(3.23% - -14.03px)
+  );
 }

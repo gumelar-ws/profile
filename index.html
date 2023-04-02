@@ -18,14 +18,35 @@
   </head>
   <body>
     <header class="">
-      <div class="card text-center border-0 shadow-none">
+      <div class="card text-center border-0 shadow-none position-relative overflow-hidden">
+        <!-- ======= poligon ======= -->
+        <div class="container text-center position-absolute ms-5 mt-5">
+          <div class="row">
+            <div class="col align-self-start">
+              <div class="pol position-absolute bg-danger opacity-25"></div>
+              <div class="pol position-absolute end-0 bg-primary opacity-25"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center position-absolute top-50" style="margin-left: 25%">
+          <div class="row">
+            <div class="col-md-4 align-self-end">
+              <div class="pol position-absolute bg-success opacity-25"></div>
+              <div class="pol position-absolute bg-warning opacity-25 end-50"></div>
+            </div>
+          </div>
+        </div>
+        <!-- ======= poligon end ======= -->
         <div class="card-header d-flex justify-content-center" id="nav">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
               <a class="nav-link active" aria-current="true" href="#" id="home">home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">service</a>
+              <a class="nav-link" href="#services">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">contact</a>
@@ -45,25 +66,107 @@
             <span class="d-flex">
               <a href="https://www.instagram.com/gumelar_wicaksono/" class="text-danger me-2"><i class="bx bxl-instagram fs-3"></i></a>
               <a href="https://web.facebook.com/gumelar.wicaksono.12" class="text-primary me-2"><i class="bx bxl-facebook fs-3"></i></a>
-              <a href="https://twitter.com/gumelar_ica" class="text-primary me-2"><i class="bx bxl-twitter fs-3"></i></a>
               <a href="https://github.com/Gumelarwicaksono/" class="text-black me-2"><i class="bx bxl-github fs-3"></i></a>
               <a href="https://api.whatsapp.com/send/?phone=%2B6282122394638&text&type=phone_number&app_absent=0" class="text-success me-2"><i class="bx bxl-whatsapp fs-3"></i></a>
             </span>
           </div>
         </div>
       </div>
-      <hr />
+      <div class="container">
+        <hr />
+      </div>
     </header>
     <!-- ============== main ================= -->
     <main>
       <div class="container-fluid mt-3">
         <div class="container cards-container">
-          <h3 class="text-primary target" id="services">services</h3>
+          <h3 class="text-primary target" id="services">Skill</h3>
           <div class="row mt-2 mb-2" id="cards"></div>
+          <hr />
         </div>
-        <hr />
       </div>
       <!-- ================ project ======================= -->
+      <article>
+        <div class="container">
+          <h3 class="text-primary" id="project">Project</h3>
+          <hr class="featurette-divider" />
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Wargi-id</h2>
+              <p class="text-secondary"><a href="https://gumelarwicaksono.github.io/wargi-id/" target="_blank">https://gumelarwicaksono.github.io/wargi-id/</a></p>
+              <p class="text-secondary mb-0">link sorce code :</p>
+              <p class="text-secondary">Frontend: <i class="bx bxl-github fs-6"></i><a href="https://github.com/Gumelarwicaksono/wargi-id" target="_blank">https://github.com/Gumelarwicaksono/wargi-id</a></p>
+              <p class="text-secondary fst-italic">
+                wargi-id Landing page aplikasi web yang dibuat menggunakan HTML, CSS, dan JavaScript setelah belajar di Dicoding dari kelas pemrograman dasar, yang memiliki tampilan menarik dan fungsionalitas yang dapat mempromosikan produk
+                atau layanan, serta meningkatkan konversi pengunjung menjadi pelanggan.
+              </p>
+              <h5>Tolls</h5>
+              <div class="row align-items-start mb-3 w-75">
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-html5 fs-3 text-bg-danger me-2"></i>HTML5</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-css3 fs-3 text-bg-warning me-2"></i>CSS3</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-javascript fs-3 text-bg-primary me-2"></i>JavaScript</div>
+              </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="./assets/img/wargi.png" width="500" height="500" class="img-fluid mx-auto" alt="ecommerce-w" />
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Ecommerce-w</h2>
+              <p class="text-secondary"><a href="https://ecommerce-w.netlify.app/" target="_blank">https://ecommerce-w.netlify.app/</a></p>
+              <p class="text-secondary mb-0">link sorce code :</p>
+              <p class="text-secondary mb-0">Frontend: <i class="bx bxl-github fs-6"></i><a href="https://github.com/Gumelarwicaksono/ecommerce-w-frontend" target="_blank">https://github.com/Gumelarwicaksono/ecommerce-w-frontend</a></p>
+              <p class="text-secondary">Backand: <i class="bx bxl-github fs-6"></i><a href="https://github.com/Gumelarwicaksono/ecommerce-w-backand" target="_blank">https://github.com/Gumelarwicaksono/ecommerce-w-backand</a></p>
+              <p class="text-secondary fst-italic">
+                Web app ecommerce menggunakan teknologi MERN stack untuk mengembangkan aplikasi web berbasis JavaScript yang terdiri dari MongoDB sebagai database, Express sebagai framework web, React sebagai library UI, dan Node.js sebagai
+                platform server.
+              </p>
+              <h5>Tolls</h5>
+              <div class="row align-items-start mb-3 w-75">
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-mongodb fs-3 text-bg-danger me-2"></i>MongoDB</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-express fs-3 text-bg-warning me-2">ex</i>Express.js</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-react fs-3 text-bg-primary me-2"></i>ReactJS</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-nodejs fs-3 text-bg-warning me-2"></i>NodeJS</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-bootstrap fs-3 text-bg-warning me-2"></i>Bootstrap</div>
+              </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="./assets/img/ecommerce-w.png" width="500" height="500" class="img-fluid mx-auto" alt="ecommerce-w" />
+            </div>
+          </div>
+
+          <hr class="featurette-divider" />
+
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Ecommerce-w</h2>
+              <p class="text-secondary"><a href="https://ecommerce-w.netlify.app/" target="_blank">https://ecommerce-w.netlify.app/</a></p>
+              <p class="text-secondary mb-0">link sorce code :</p>
+              <p class="text-secondary mb-0">Frontend: <i class="bx bxl-github fs-6"></i><a href="https://github.com/Gumelarwicaksono/ecommerce-w-frontend" target="_blank">https://github.com/Gumelarwicaksono/ecommerce-w-frontend</a></p>
+              <p class="text-secondary">Backand: <i class="bx bxl-github fs-6"></i><a href="https://github.com/Gumelarwicaksono/ecommerce-w-backand" target="_blank">https://github.com/Gumelarwicaksono/ecommerce-w-backand</a></p>
+              <p class="text-secondary fst-italic">
+                Web app ecommerce menggunakan teknologi MERN stack untuk mengembangkan aplikasi web berbasis JavaScript yang terdiri dari MongoDB sebagai database, Express sebagai framework web, React sebagai library UI, dan Node.js sebagai
+                platform server.
+              </p>
+              <h5>Tolls</h5>
+              <div class="row align-items-start mb-3 w-75">
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-mongodb fs-3 text-bg-danger me-2"></i>MongoDB</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-express fs-3 text-bg-warning me-2">ex</i>Express.js</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-react fs-3 text-bg-primary me-2"></i>ReactJS</div>
+                <div class="col d-flex align-items-center mb-2"><i class="bx bxl-nodejs fs-3 text-bg-warning me-2"></i>NodeJS</div>
+              </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="./assets/img/ecommerce-w.png" width="500" height="500" class="img-fluid mx-auto" alt="ecommerce-w" />
+            </div>
+          </div>
+          <hr class="featurette-divider" />
+        </div>
+      </article>
       <!-- ================ contak me ======================= -->
       <div class="container align-items-center mt-4">
         <h3 class="text-primary target" id="contact">Contact</h3>
@@ -95,7 +198,7 @@
     </footer>
     <!-- ======== btn dark mode =========== -->
     <p id="teme" class="text-primary fs-6">Teme</p>
-    <button class="rounded-pill" id="mode-toggle" onclick="toggleDarkMode(true)"><i id="mode-icon" class="bx bxs-moon"></i></button>
+    <button class="rounded-pill" id="mode-toggle" onclick="toggleDarkMode(false)"><i id="mode-icon" class="bx bxs-moon"></i></button>
     <a class="back-home" href="#">
       <i class="bx bx-up-arrow-alt fs-1"></i>
     </a>
