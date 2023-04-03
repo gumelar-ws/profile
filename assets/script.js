@@ -250,7 +250,7 @@ if (isDarkMode) {
 
 function toggleDarkMode() {
   isDarkMode = !isDarkMode;
-  setDarkMode(isDarkMode);
+  setDarkMode(!isDarkMode);
   updateModeIcon();
 }
 
