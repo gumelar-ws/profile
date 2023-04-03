@@ -63,28 +63,28 @@ navLinks.forEach((link) => {
 });
 
 // ======================== text typing ================================
-const myDiv = document.getElementById('myJob');
-const types = myDiv.dataset.type.split(','); //mengambil nilai tipe data dan memisahkan dengan koma
-let currentIndex = 0;
+// const myDiv = document.getElementById('myJob');
+// const types = myDiv.dataset.type.split(','); //mengambil nilai tipe data dan memisahkan dengan koma
+// let currentIndex = 0;
 
-function typingEffect() {
-  let currentType = types[currentIndex];
-  let text = `${currentType}`; //menambahkan nilai tipe data ke dalam kalimat
+// function typingEffect() {
+//   let currentType = types[currentIndex];
+//   let text = `${currentType}`; //menambahkan nilai tipe data ke dalam kalimat
 
-  let i = 0;
-  const intervalId = setInterval(() => {
-    if (i >= text.length) {
-      clearInterval(intervalId);
-      setTimeout(() => {
-        currentIndex = (currentIndex + 1) % types.length;
-        typingEffect();
-      }, 1000); //delay 1 detik sebelum mengetik kalimat baru
-    } else {
-      myDiv.innerHTML = text.slice(0, i + 1);
-      i++;
-    }
-  }, 100); //delay 0.1 detik setiap karakter yang diketik
-}
+//   let i = 0;
+//   const intervalId = setInterval(() => {
+//     if (i >= text.length) {
+//       clearInterval(intervalId);
+//       setTimeout(() => {
+//         currentIndex = (currentIndex + 1) % types.length;
+//         typingEffect();
+//       }, 1000); //delay 1 detik sebelum mengetik kalimat baru
+//     } else {
+//       myDiv.innerHTML = text.slice(0, i + 1);
+//       i++;
+//     }
+//   }, 100); //delay 0.1 detik setiap karakter yang diketik
+// }
 
 typingEffect(); //memulai efek ketik pada halaman web
 
