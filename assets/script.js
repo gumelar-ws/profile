@@ -242,7 +242,7 @@ const footer = document.getElementById('tahun');
 footer.innerHTML = '&copy; ' + currentYear + ' gumelar-wicaksono. All rights reserved.';
 
 // ====================== DARK ==================================
-let isDarkMode = localStorage.getItem('theme') === 'dark';
+let isDarkMode = localStorage.getItem('theme') === 'light';
 
 if (isDarkMode) {
   setDarkMode(true);
@@ -250,7 +250,7 @@ if (isDarkMode) {
 
 function toggleDarkMode() {
   isDarkMode = !isDarkMode;
-  setDarkMode(!isDarkMode);
+  setDarkMode(isDarkMode);
   updateModeIcon();
 }
 
