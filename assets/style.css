@@ -9,11 +9,9 @@
 .size {
   width: 20%;
   height: 20%;
-  background: #a8eb12;
+  border-radius: 80%;
 }
-.border-primary {
-  border-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12), 3;
-}
+
 .myjob {
   background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   -webkit-text-fill-color: transparent;
