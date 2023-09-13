@@ -159,16 +159,10 @@ const data = [
 // ===================================
 let cardsHTML = '';
 data.forEach((card, index) => {
-  const cardHTML = `<div class=" col-sm-3  col-md-4 col-lg-3 ">
+  const cardHTML = `<div class=" col">
                       <div class="  card  border-primary mb-3 " style="max-width: 18rem">
                         <div class="card-header"><i class="bx bxl-${card.icon} ${card.color} ms-2"></i>${card.title}</div>
-                        <div class="card-body">
-                          <h5 class="card-title">${card.subTitle}</h5>
-                          <p class="card-text content${index}">
-                            ${card.description}
-                          </p>
-                          <span class="show-more-btn text-primary" id="show-more-btn-${index}"></span>
-                        </div>
+                       
                       </div>
                     </div>`;
   cardsHTML += cardHTML;
@@ -177,64 +171,7 @@ data.forEach((card, index) => {
 const cardContainer = document.getElementById('cards');
 cardContainer.innerHTML = cardsHTML;
 
-data.forEach((card, index) => {
-  const content = document.querySelector(`.content${index}`);
-  const btn = document.querySelector(`#show-more-btn-${index}`);
-  const defaultHeight = '100px';
-  const showMoreText = 'Tampilkan Lebih Banyak <i class="bx bx-down-arrow-alt"></i>';
-  const hideText = 'Sembunyikan <i class="bx bx-up-arrow-alt"></i>';
-
-  let isContentVisible = false;
-
-  btn.innerHTML = showMoreText;
-
-  btn.addEventListener('click', () => {
-    isContentVisible = !isContentVisible;
-
-    if (isContentVisible) {
-      content.style.height = 'auto';
-      btn.innerHTML = hideText;
-    } else {
-      content.style.height = defaultHeight;
-      btn.innerHTML = showMoreText;
-    }
-  });
-});
-
 // ===================  contact me =============================
-
-function sendWhatsAppMessage() {
-  // Mendapatkan input nomor telepon dan pesan dari form
-  const phoneMe = 6282122394638;
-  const companyName = document.getElementById('company').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-  const note = document.getElementById('note').value;
-
-  // Menambahkan format teks pada pesan
-  const formattedMessage = `
-    Hai, ini pesan dari *${companyName}*! 🚀
-
-    *email*   : ${email} 
-    ___________
-    *message* : ${message}
-    ___________
-    *note*    : ${note}
-    ___________
-    Terima kasih telah menghubungi saya! 🙂
-  `;
-
-  // Menggabungkan nomor telepon dan pesan yang telah diformat menjadi link WhatsApp
-  const url = `https://wa.me/${phoneMe}?text=${encodeURIComponent(formattedMessage)}`;
-
-  // Membuka link WhatsApp pada tab atau jendela baru
-  window.open(url, '_blank');
-  // Setel value dari inputan menjadi kosong
-  document.getElementById('company').value = '';
-  document.getElementById('email').value = '';
-  document.getElementById('message').value = '';
-  document.getElementById('note').value = '';
-}
 
 // ================================================
 const currentYear = new Date().getFullYear();
